@@ -5,6 +5,7 @@ Created on Tue Jan  7 09:52:02 2025
 
 @author: Alexander.Morano
 """
+#Now we need to move the ZIP files that are the output of the CellPose process to the same subfolder as the antibody channel images on which we need to run our FIJI macro
 
 import glob
 import shutil
