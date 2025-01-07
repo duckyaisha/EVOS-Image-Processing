@@ -5,6 +5,9 @@ Created on Tue Jan  7 09:51:19 2025
 
 @author: Alexander.Morano
 """
+#The reason we need to do this is because the FIJI macro requires the ZIP files that are the output of the CellPose function 
+#to have the same name as the .TIFs on which the macro is run. 
+#thus, we need to change the first part of the name of the d2 files (the red antibody channel) to d0_rois to match
 
 import os
 
