@@ -10,19 +10,19 @@ import os
 import shutil
 import glob
 
+# Set your directory to wherever the images in question are
 os.chdir('/Users/Alexander.Morano/Desktop/data/2024_12_19_GPCs_final_test/remnantplate/') 
 
-# Set your prefix
+# Set the prefix that precedes all images
 prefix = 'rem_test'  # Replace this with your current prefix
 
 # Step 1: List all TIF files matching the pattern
 files = glob.glob(f"{prefix}_Plate_R_*.TIF")
 
-
-# Step 2: Extract the 'd0', 'd1', or 'd2' from the filenames
+# Step 2: Extract the channel label ('d0', 'd1', or 'd2') from the filenames
 prefixes = set()
 for file in files:
-    prematch = file.split('.')[0]  # Extract the relevant part like 'd0', 'd1', 'd2'
+    prematch = file.split('.')[0]  #Extract the relevant part like 'd0', 'd1', 'd2'
     match = prematch[-2:]
   
     if match.startswith('d') and match[1] in '012':
