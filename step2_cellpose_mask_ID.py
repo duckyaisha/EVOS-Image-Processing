@@ -5,6 +5,7 @@ Created on Tue Jan  7 09:50:47 2025
 
 @author: Alexander.Morano
 """
+#All this info is based on the documentation for the CellPose program to be run in a jupyter notebook 
 
 import numpy as np
 import matplotlib.pyplot as plt
